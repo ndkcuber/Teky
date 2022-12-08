@@ -46,3 +46,45 @@ ul li .item:hover{
 	background: #85EEBB;
 }
 
+
+.roundcard{
+	margin: 30px;
+	min-width: 100%;
+	min-height: 400px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.user-input{
+	outline: none;
+	font-family: 'Quicksand';
+	font-size: 20px;
+	width: 100%;
+	border:none;
+	border-bottom: 1px solid black;
+}
+
+.user-input: focus{
+
+}
+
+.success-btn{
+	font-family: 'Quicksand';
+	display: block;
+	min-width: 200px;
+	min-height: 50px;
+	margin: 20px;
+	font-size: 20px;
+	background: #13CF74;
+	color: white;
+	border:none;
+	border-radius: 30px;
+	transition: .2s ease;
+}
+
+.success-btn:hover{
+	background: #85EEBB;
+	cursor: pointer;
+}
