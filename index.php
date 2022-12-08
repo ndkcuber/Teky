@@ -6,6 +6,6 @@
 	<title>Bài 6</title>
 </head>
 <body>
-
+	<a href="https://youtube.com/" target="_blank">Click this nigga</a>
 </body>
 </html>
