@@ -35,7 +35,7 @@ body{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 720px;
+    max-width: 1400px;
 }
 
 .navbar{
@@ -114,4 +114,49 @@ select, select option{
 	font-size: 20px;
 	font-family: 'Quicksand';
 	border-radius: 10px;
+}
+
+div .box{
+	margin: 10px;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;	
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	max-width: 260px;
+	min-width: 260px;
+	text-align: center;
+}
+
+div .box .title{
+	text-align: center;
+}
+
+div .box .image img{
+	width: 140px;
+	display: inline-block;
+	min-width: 140px;
+	margin: 30px;
+}
+
+div .box .description{
+	color: grey;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.view-more-btn{
+	display: inline-block;
+	padding: 10px 40px;
+	width: 60%;
+	text-decoration: none;
+	color: white;
+	background-color: #13CF74 ;
+	text-align: center;
+	border-radius: 40px;
+	transition: .2s ease;
+}
+
+.view-more-btn:hover{
+	background: #8BEB80;
+	transform: scale(1.2) skewY(-10deg);
 }

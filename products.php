@@ -12,13 +12,32 @@
 	 ?>
 	<div class="container">
 		<h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
-		<div style="margin: 40px;">
+		<div>
 			<div class="box">
 				<div class="title"><h2>Sản phẩm 1</h2></div>
-				<div class="image"></div>
+				<div class="image"><img src="cdn/product.png"></div>
 				<div class="description"><p>Đây là một sản phẩm test</p></div>
-				<a href="javascript:void(0)">Xem thêm</a>	
+				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
 			</div>
+			<div class="box">
+				<div class="title"><h2>Sản phẩm 1</h2></div>
+				<div class="image"><img src="cdn/product.png"></div>
+				<div class="description"><p>Đây là một sản phẩm test</p></div>
+				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
+			</div>
+			<div class="box">
+				<div class="title"><h2>Sản phẩm 1</h2></div>
+				<div class="image"><img src="cdn/product.png"></div>
+				<div class="description"><p>Đây là một sản phẩm test</p></div>
+				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
+			</div>
+			<div class="box">
+				<div class="title"><h2>Sản phẩm 1</h2></div>
+				<div class="image"><img src="cdn/product.png"></div>
+				<div class="description"><p>Đây là một sản phẩm test</p></div>
+				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
+			</div>
+			
 		</div>
 	</div>
 </body>
