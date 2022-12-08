@@ -16,15 +16,16 @@
 			<form action="login.php" style="margin: 20px; text-align: left;">
 				<label for="login-username"></label>
 				<h2>Username:</h2>
-				<input type="text" name="username" class="user-input" placeholder="Username" required>
+				<input type="text" name="login-username" class="user-input" placeholder="Username" required>
 
 				<label for="login-password"></label>
 				<h2>Password:</h2>
-				<input type="password" name="password" class="user-input" placeholder="Password" required>
+				<input type="password" name="login-password" class="user-input" placeholder="Password" required>
 
 				<br>
-				<input type="submit" name="submit" class="success-btn">
+				<input type="submit" name="submit" value="Đăng nhập" class="success-btn">
 			</form>
+			<p>Chưa có tài khoản? <a href="register.php" style="text-decoration: none; color: red;">Đăng kí</a> ngay!</p>
 		</div>
 	</div>
 </body>

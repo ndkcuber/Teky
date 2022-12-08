@@ -11,6 +11,24 @@ body{
 	scroll-behavior: smooth;
 }
 
+#hs tr:nth-child(even){background-color: #f2f2f2;}
+
+#hs tr:hover {background-color: #ddd;}
+
+#hs th {
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+}
+
+#hs td, #hs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
 .container{
 	width: 100%;
     padding-right: 15px;
@@ -63,6 +81,7 @@ ul li .item:hover{
 	font-size: 20px;
 	width: 100%;
 	border:none;
+	background: white;
 	border-bottom: 1px solid black;
 }
 
@@ -87,4 +106,12 @@ ul li .item:hover{
 .success-btn:hover{
 	background: #85EEBB;
 	cursor: pointer;
+}
+
+select, select option{
+	display: inline-block;
+	padding: 10px 40px;
+	font-size: 20px;
+	font-family: 'Quicksand';
+	border-radius: 10px;
 }

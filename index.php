@@ -11,7 +11,42 @@
  		include "navbar.php";
 	 ?>
 	<div class="container">
-		
+		<h1>NHỮNG SẢN PHẨM THỊNH THÀNH THÁNG 12</h1>
+		<div style="margin: 40px;" title="Bảng giá">
+			<table id="hs">
+			  <tr>
+			    <th>Sản phẩm</th>
+			    <th>Giá</th>
+			    <th>Tình trạng</th>
+			  </tr>
+			  <tr>
+			    <td>Unknown Product</td>
+			    <td>99.99$</td>
+			    <td>Pending</td>
+			  </tr>
+			  <tr>
+			    <td>Unknown Product</td>
+			    <td>99.99$</td>
+			    <td>Pending</td>
+			  </tr>
+			  <tr>
+			    <td>Unknown Product</td>
+			    <td>99.99$</td>
+			    <td>Pending</td>
+			  </tr>
+			  <tr>
+			    <td>Unknown Product</td>
+			    <td>99.99$</td>
+			    <td>Pending</td>
+			  </tr>
+			  <tr>
+			    <td>Unknown Product</td>
+			    <td>99.99$</td>
+			    <td>Pending</td>
+			  </tr>
+			  
+			</table>
+		</div>
 	</div>
 </body>
 </html>
