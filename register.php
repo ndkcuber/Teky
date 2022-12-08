@@ -10,7 +10,7 @@
 	<?php
  		include "navbar.php";
 	 ?>
-	<div class="container">
+	<div class="container" style="max-width: 720px;">
 		<div class="roundcard">
 			<h1>Register</h1>
 			<form action="register.php" style="margin: 20px; text-align: left;">
