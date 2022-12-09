@@ -7,9 +7,9 @@
    date_default_timezone_set('Asia/Bangkok');
    $conn = new mysqli($host, $username, $password, $db);
    if ($conn) {
-      $result = "Connected to database";
+      $db_result = "Connected to database";
    } else{
-      $result = "Cannot connect to database";
+      $db_result = "Cannot connect to database";
       header("Location: con_db.php");
       die();
    }
@@ -25,5 +25,4 @@
    }
 
    $current_date_and_time = date("d/m/Y");
-   echo $result;
 ?>

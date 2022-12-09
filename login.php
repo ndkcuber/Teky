@@ -1,3 +1,16 @@
+<?php 
+	include "database.php";
+	if ($isset($_SESSION['username'])) {
+		header("Location: index.php");
+		die();
+	} else{
+		if (isset($_POST['login-username']) && isset($_POST['login-password'])) {
+			
+		}
+	}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

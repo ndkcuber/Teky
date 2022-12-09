@@ -1,13 +1,41 @@
-<?php 
+<?php
+	$ketqua = ""; 
+	include "database.php";
 	if (!isset($_SESSION['session_username'])) {
 		if (isset($_POST['login-username'])) {
 			$username = $_POST['login-username'];
 			$password = password_hash($_POST['login-password'], PASSWORD_DEFAULT);
 			$fullname = $_POST['user-name'];
 			$gender = $_POST['gender'];
-			$result = "";
-			if ($username == "nigga") {
-				echo "bruh";
+
+			#verify valid username
+			if (ctype_alnum($username) && strlen($username)<=50 && strlen($username)>=3) {
+				if (!preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $fullname)) {
+					$result = mysqli_query($conn, "SELECT * FROM logindb WHERE username = '".$username."'");
+					if (mysqli_num_rows($result)) {
+						$ketqua = "Tên người dùng đã được sử dụng";
+					} else{
+						$regdate = date('Y-m-d');
+						$ip = $_SERVER['REMOTE_ADDR'];
+						$sql = "SELECT * FROM logindb";
+						if ($result=mysqli_query($conn,$sql)) {
+							$rowcount=mysqli_num_rows($result);
+							$user_id = $rowcount+1;
+						}
+						$sql = "INSERT INTO `logindb`(`username`, `password`, `role`, `ip`, `banned`, `user_id`, `reg_date`) VALUES ('".$username."','".$password."','Customer','".$ip."','0','".$user_id."','".$regdate."')";
+                        $result = mysqli_query($conn, $sql);
+                        if ($sql) {
+                        	$ketqua = "Đăng kí tài khoản thành công!";
+                        } else{
+                        	$ketqua = "Đăng kí tài khoản thất bại! Vui lòng thử lại sau!";
+                        }
+					}
+						
+				} else{
+					$ketqua = "Họ và tên không hợp lệ";
+				}
+			} else{
+				$ketqua = "Username không được chứa kí tự đặc biệt và dài hơn 50 kí tự";
 			}
 		}
 	} else{
@@ -29,7 +57,7 @@
  		include "navbar.php";
 	 ?>
 	<div class="container" style="max-width: 720px;">
-		<?php echo $result ?>
+		<h1><?php echo $ketqua ?></h1>
 		<div class="roundcard">
 			<h1>Register</h1>
 			<form action="register.php" method="post" style="margin: 20px; text-align: left;">

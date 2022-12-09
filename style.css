@@ -61,7 +61,8 @@ ul li .item{
 }
 
 ul li .item:hover{
-	background: #85EEBB;
+	color: yellow;
+	transform: scale(1.2);
 }
 
 
