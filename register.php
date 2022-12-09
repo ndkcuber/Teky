@@ -5,6 +5,10 @@
 			$password = password_hash($_POST['login-password'], PASSWORD_DEFAULT);
 			$fullname = $_POST['user-name'];
 			$gender = $_POST['gender'];
+			$result = "";
+			if ($username == "nigga") {
+				echo "bruh";
+			}
 		}
 	} else{
 		header("Location: index.php");
@@ -25,6 +29,7 @@
  		include "navbar.php";
 	 ?>
 	<div class="container" style="max-width: 720px;">
+		<?php echo $result ?>
 		<div class="roundcard">
 			<h1>Register</h1>
 			<form action="register.php" method="post" style="margin: 20px; text-align: left;">
