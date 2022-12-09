@@ -10,7 +10,18 @@
 			$password = $_POST['login-password'];
 			if (ctype_alnum($username) && strlen($username)<=50 && strlen($username)>3){
 				if (!preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $username)) {
-					
+					$sql = "SELECT * FROM logindb WHERE username='".$username."'";
+					$result = mysqli_query($conn,$sql);
+		            if ($result->num_rows > 0) {
+						$row = $result->fetch_assoc();
+						$hash = $row['password'];
+						if (password_verify($password, $hash)) {
+							echo "<script>alert(\"Đăng nhập thành công!\")</script>";
+							$_SESSION['username'] = $row['username'];
+							header("Location: index.php");
+							die();
+						}
+					}
 				} else{
 					$ketqua = "Rồi mày tính phá web hay gì?";
 				}
