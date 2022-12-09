@@ -1,11 +1,22 @@
 <?php 
 	include "database.php";
-	if ($isset($_SESSION['username'])) {
+	$ketqua = "";
+	if (isset($_SESSION['username'])) {
 		header("Location: index.php");
 		die();
 	} else{
 		if (isset($_POST['login-username']) && isset($_POST['login-password'])) {
-			
+			$username = $_POST['login-username'];
+			$password = $_POST['login-password'];
+			if (ctype_alnum($username) && strlen($username)<=50 && strlen($username)>3){
+				if (!preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $username)) {
+					
+				} else{
+					$ketqua = "Rồi mày tính phá web hay gì?";
+				}
+			} else{
+				$ketqua = "Rồi mày tính phá web hay gì?";
+			}
 		}
 	}
 
@@ -24,6 +35,7 @@
  		include "navbar.php";
 	 ?>
 	<div class="container" style="max-width: 720px;">
+		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
 			<h1>Login</h1>
 			<form action="login.php" method="post" style="margin: 20px; text-align: left;">

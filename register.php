@@ -9,7 +9,7 @@
 			$gender = $_POST['gender'];
 
 			#verify valid username
-			if (ctype_alnum($username) && strlen($username)<=50 && strlen($username)>=3) {
+			if (ctype_alnum($username) && strlen($username)<=50 && strlen($username)>3) {
 				if (!preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $fullname)) {
 					$result = mysqli_query($conn, "SELECT * FROM logindb WHERE username = '".$username."'");
 					if (mysqli_num_rows($result)) {
@@ -23,7 +23,7 @@
 							$user_id = $rowcount+1;
 						}
 						$sql = "INSERT INTO `logindb`(`username`, `password`, `role`, `ip`, `banned`, `user_id`, `reg_date`) VALUES ('".$username."','".$password."','Customer','".$ip."','0','".$user_id."','".$regdate."')";
-                        $result = mysqli_query($conn, $sql);
+						$result = mysqli_query($conn, $sql);
                         if ($sql) {
                         	$ketqua = "Đăng kí tài khoản thành công!";
                         } else{
@@ -57,7 +57,7 @@
  		include "navbar.php";
 	 ?>
 	<div class="container" style="max-width: 720px;">
-		<h1><?php echo $ketqua ?></h1>
+		<h1 style="color: salmon;"><?php echo $ketqua ?></h1>
 		<div class="roundcard">
 			<h1>Register</h1>
 			<form action="register.php" method="post" style="margin: 20px; text-align: left;">
