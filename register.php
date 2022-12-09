@@ -1,3 +1,17 @@
+<?php 
+	if (!isset($_SESSION['session_username'])) {
+		if (isset($_POST['login-username'])) {
+			$username = $_POST['login-username'];
+			$password = password_hash($_POST['login-password'], PASSWORD_DEFAULT);
+			$fullname = $_POST['user-name'];
+			$gender = $_POST['gender'];
+		}
+	} else{
+		header("Location: index.php");
+    	die();
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +27,7 @@
 	<div class="container" style="max-width: 720px;">
 		<div class="roundcard">
 			<h1>Register</h1>
-			<form action="register.php" style="margin: 20px; text-align: left;">
+			<form action="register.php" method="post" style="margin: 20px; text-align: left;">
 				<label for="user-name"></label>
 				<h2>Tên:</h2>
 				<input type="text" name="user-name" class="user-input" placeholder="Họ và tên" required>

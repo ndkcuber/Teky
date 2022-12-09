@@ -13,7 +13,7 @@
 	<div class="container" style="max-width: 720px;">
 		<div class="roundcard">
 			<h1>Login</h1>
-			<form action="login.php" style="margin: 20px; text-align: left;">
+			<form action="login.php" method="post" style="margin: 20px; text-align: left;">
 				<label for="login-username"></label>
 				<h2>Username:</h2>
 				<input type="text" name="login-username" class="user-input" placeholder="Username" required>
