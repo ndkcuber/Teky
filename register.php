@@ -34,11 +34,11 @@
 
 				<label for="gender"></label>
 				<h2>Giới tính:</h2>
-				<select for="gender" required>
+				<select name="gender" required>
 					<option></option>
 					<option value="male">Nam</option>
 					<option value="female">Nữ</option>
-					<option value="retard">Hamburger</option>
+					<option value="retard">LGBT (Thiểu năng)</option>
 				</select>
 
 				<label for="login-username"></label>
