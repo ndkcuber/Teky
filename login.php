@@ -1,6 +1,7 @@
 <?php 
 	include "database.php";
 	$ketqua = "";
+	session_start();
 	if (isset($_SESSION['username'])) {
 		header("Location: index.php");
 		die();
@@ -17,20 +18,24 @@
 						$hash = $row['password'];
 						if (password_verify($password, $hash)) {
 							echo "<script>alert(\"Đăng nhập thành công!\")</script>";
-							$_SESSION['username'] = $row['username'];
+							session_start();
+							$_SESSION["username"] = $username;
 							header("Location: index.php");
 							die();
+							} else{
+							$ketqua = "Sai mật khẩu hoặc tên người dùng";
 						}
+					} else{
+						$ketqua = "Sai mật khẩu hoặc tên người dùng";
 					}
 				} else{
 					$ketqua = "Rồi mày tính phá web hay gì?";
 				}
 			} else{
-				$ketqua = "Rồi mày tính phá web hay gì?";
+					$ketqua = "Rồi mày tính phá web hay gì?";
 			}
 		}
 	}
-
 ?>
 
 <!DOCTYPE html>

@@ -22,7 +22,7 @@
 							$rowcount=mysqli_num_rows($result);
 							$user_id = $rowcount+1;
 						}
-						$sql = "INSERT INTO `logindb`(`username`, `password`, `role`, `ip`, `banned`, `user_id`, `reg_date`) VALUES ('".$username."','".$password."','Customer','".$ip."','0','".$user_id."','".$regdate."')";
+						$sql = "INSERT INTO `logindb`(`fullname`,`username`, `password`, `role`, `ip`, `banned`, `user_id`, `reg_date`) VALUES ('".$fullname."','".$username."','".$password."','Customer','".$ip."','0','".$user_id."','".$regdate."')";
 						$result = mysqli_query($conn, $sql);
                         if ($sql) {
                         	$ketqua = "Đăng kí tài khoản thành công!";
