@@ -44,8 +44,15 @@
 			    <td>99.99$</td>
 			    <td>Pending</td>
 			  </tr>
-			  
 			</table>
+		</div>
+	</div>
+	<div class="container">
+		<h1>Đối tác kinh doanh</h1>
+		<div class="partner" title="partners">
+			<img src="cdn/youtube.png">
+			<img src="cdn/teky.png">
+			<img src="cdn/cornhub.jpg">
 		</div>
 	</div>
 </body>

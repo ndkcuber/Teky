@@ -189,3 +189,23 @@ div .box .description{
 .ip:hover{
 	filter: none;
 }
+
+.partner img{
+	max-width: 100px;
+	width: 100px;
+	margin: 10px;
+	padding: 10px;
+	filter: grayscale(100%);
+	transition: .2s ease;
+}
+
+.partner img:hover{
+	cursor: pointer;
+	filter: none;
+}
+
+.partner{
+	display: inline-block;
+	text-align: center;
+
+}
