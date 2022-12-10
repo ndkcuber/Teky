@@ -58,11 +58,13 @@ ul li .item{
 	text-decoration: none;
 	min-width: 100px;
 	transition: .2s ease;
+	border-radius: 20px;
 }
 
 ul li .item:hover{
 	color: yellow;
-	transform: scale(1.2);
+	transform: scale(1.04);
+	background-color: #0CC875;
 }
 
 
@@ -86,9 +88,6 @@ ul li .item:hover{
 	border-bottom: 1px solid black;
 }
 
-.user-input: focus{
-
-}
 
 .success-btn{
 	font-family: 'Quicksand';
@@ -159,24 +158,32 @@ div .box .description{
 
 .view-more-btn:hover{
 	background: #8BEB80;
-	transform: scale(1.2) skewY(-10deg);
 }
 
 .defaultbtn{
 	display: inline-block;
 	min-width: 200px;
-	padding: 20px;
+	padding: 10px;
 	outline: none;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	background: #13CF74;
 	text-align: center;
 	text-decoration: none;
 	color: white;
-	border-radius: 20px;
+	border-radius: 40px;
 	font-size: 20px;
 	transition: .2s ease;
 }
 
 .defaultbtn:hover{
-	background: #8BEB80;
+	background: #4FE3A2;
+}
+
+.ip{
+	filter: blur(5px);
+	transition: .2s ease;
+}
+
+.ip:hover{
+	filter: none;
 }

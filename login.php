@@ -18,6 +18,8 @@
 						$hash = $row['password'];
 						if (password_verify($password, $hash)) {
 							echo "<script>alert(\"Đăng nhập thành công!\")</script>";
+							$ip = $_SERVER['REMOTE_ADDR'];
+							mysqli_query($conn,"UPDATE `logindb` SET `ip`='".$ip."' WHERE `username`=".$username."");
 							session_start();
 							$_SESSION["username"] = $username;
 							header("Location: index.php");

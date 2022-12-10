@@ -23,7 +23,7 @@
 			$rank = $row['role'];
 			$regdate = $row['reg_date'];
 			$uid = $row['user_id'];
-			
+			$ip = $row['ip'];
 			}
 	 ?>
 	<div class="container" style="max-width: 720px;">
@@ -36,6 +36,7 @@
 				<h2 style="color:grey;">Vai trò: <span style="color:black;"><?php echo $rank ?></span></h2>
 				<h2 style="color:grey;">Ngày đăng kí: <span style="color:black;"><?php echo $regdate ?></span></h2>
 				<h2 style="color:grey;">UID: <span style="color:black;"><?php echo $uid ?></span></h2>
+				<h2 style="color:grey;">IP: <span style="color:black;" class="ip"><?php echo $ip ?></span></h2>
 			</div>
 	
 		</div>
