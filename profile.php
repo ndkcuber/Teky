@@ -12,7 +12,7 @@
 	 	$ketqua = "";
 		include "database.php";
 		if (!isset($_SESSION['username'])) {
-			header("Location: login.php");
+			header("Location: login.php?redirect=profile.php");
 			die();
 		} else{
 			$sql = "SELECT * FROM logindb WHERE username='".$_SESSION['username']."'";

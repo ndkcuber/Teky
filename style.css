@@ -161,3 +161,22 @@ div .box .description{
 	background: #8BEB80;
 	transform: scale(1.2) skewY(-10deg);
 }
+
+.defaultbtn{
+	display: inline-block;
+	min-width: 200px;
+	padding: 20px;
+	outline: none;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background: #13CF74;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
+	transition: .2s ease;
+}
+
+.defaultbtn:hover{
+	background: #8BEB80;
+}
