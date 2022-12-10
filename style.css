@@ -139,6 +139,8 @@ div .box .image img{
 }
 
 div .box .description{
+	margin: 0;
+	padding: 0;
 	color: grey;
 	max-width: 100%;
 	overflow: hidden;

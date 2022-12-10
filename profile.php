@@ -9,7 +9,6 @@
 <body>
 	<?php
  		include "navbar.php";
-	 	$ketqua = "";
 		include "database.php";
 		if (!isset($_SESSION['username'])) {
 			header("Location: login.php?redirect=profile.php");
@@ -27,7 +26,6 @@
 			}
 	 ?>
 	<div class="container" style="max-width: 720px;">
-		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
 			<h1>Trang cá nhân</h1>
 			<div style="margin: 30px; text-align: left;">

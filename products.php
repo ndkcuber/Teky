@@ -16,28 +16,9 @@
 			<div class="box">
 				<div class="title"><h2>Sản phẩm 1</h2></div>
 				<div class="image"><img src="cdn/product.png"></div>
-				<div class="description"><p>Đây là một sản phẩm test</p></div>
+				<div style="color: grey" class="description"><h2>19.99 $</h2><p>Đây là một sản phẩm test</p></div>
 				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
 			</div>
-			<div class="box">
-				<div class="title"><h2>Sản phẩm 2</h2></div>
-				<div class="image"><img src="cdn/product.png"></div>
-				<div class="description"><p>Đây là một sản phẩm test</p></div>
-				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
-			</div>
-			<div class="box">
-				<div class="title"><h2>Sản phẩm 3</h2></div>
-				<div class="image"><img src="cdn/product.png"></div>
-				<div class="description"><p>Đây là một sản phẩm test</p></div>
-				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
-			</div>
-			<div class="box">
-				<div class="title"><h2>Sản phẩm 4</h2></div>
-				<div class="image"><img src="cdn/product.png"></div>
-				<div class="description"><p>Đây là một sản phẩm test</p></div>
-				<a href="javascript:void(0)" class="view-more-btn">Xem thêm</a>	
-			</div>
-
 		</div>
 	</div>
 </body>
