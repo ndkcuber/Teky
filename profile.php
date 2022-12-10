@@ -30,12 +30,16 @@
 		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
 			<h1>Trang cá nhân</h1>
-			<h2>Username: <?php echo $username ?></h2>
-			<h2>Họ và tên: <?php echo $fullname ?></h2>
-			<h2>Vai trò: <?php echo $rank ?></h2>
-			<h2>Ngày đăng kí: <?php echo $regdate ?></h2>
-			<h2>UID: <?php echo $uid ?></h2>	
+			<div style="margin: 30px; text-align: left;">
+				<h2 style="color:grey;">Username: <span style="color:black;"><?php echo $username ?></span></h2>
+				<h2 style="color:grey;">Họ và tên: <span style="color:black;"><?php echo $fullname ?></span></h2>
+				<h2 style="color:grey;">Vai trò: <span style="color:black;"><?php echo $rank ?></span></h2>
+				<h2 style="color:grey;">Ngày đăng kí: <span style="color:black;"><?php echo $regdate ?></span></h2>
+				<h2 style="color:grey;">UID: <span style="color:black;"><?php echo $uid ?></span></h2>
+			</div>
+	
 		</div>
+		<a href="logout.php?confirm=yes" class="defaultbtn">Đăng xuất</a>
 	</div>
 </body>
 </html>

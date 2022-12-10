@@ -1,6 +1,7 @@
 <?php
 	$ketqua = ""; 
 	include "database.php";
+	include "navbar.php";
 	if (!isset($_SESSION['session_username'])) {
 		if (isset($_POST['login-username'])) {
 			$username = $_POST['login-username'];
@@ -53,9 +54,6 @@
 	<title>Đăng kí</title>
 </head>
 <body>
-	<?php
- 		include "navbar.php";
-	 ?>
 	<div class="container" style="max-width: 720px;">
 		<h1 style="color: salmon;"><?php echo $ketqua ?></h1>
 		<div class="roundcard">

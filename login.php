@@ -1,7 +1,7 @@
 <?php 
 	include "database.php";
+	include 'navbar.php';
 	$ketqua = "";
-	session_start();
 	if (isset($_SESSION['username'])) {
 		header("Location: index.php");
 		die();
@@ -47,9 +47,6 @@
 	<title>Đăng nhập</title>
 </head>
 <body>
-	<?php
- 		include "navbar.php";
-	 ?>
 	<div class="container" style="max-width: 720px;">
 		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
