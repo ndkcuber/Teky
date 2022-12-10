@@ -6,54 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Trang chủ</title>
 </head>
-<body>
+<body onload="typeWriter()">
 	<?php
  		include "navbar.php";
 	 ?>
-	<div class="container">
-		<h1>NHỮNG SẢN PHẨM THỊNH THÀNH THÁNG 12</h1>
-		<div style="margin: 40px;" title="Bảng giá">
-			<table id="hs">
-			  <tr>
-			    <th>Sản phẩm</th>
-			    <th>Giá</th>
-			    <th>Tình trạng</th>
-			  </tr>
-			  <tr>
-			    <td>Unknown Product</td>
-			    <td>99.99$</td>
-			    <td>Pending</td>
-			  </tr>
-			  <tr>
-			    <td>Unknown Product</td>
-			    <td>99.99$</td>
-			    <td>Pending</td>
-			  </tr>
-			  <tr>
-			    <td>Unknown Product</td>
-			    <td>99.99$</td>
-			    <td>Pending</td>
-			  </tr>
-			  <tr>
-			    <td>Unknown Product</td>
-			    <td>99.99$</td>
-			    <td>Pending</td>
-			  </tr>
-			  <tr>
-			    <td>Unknown Product</td>
-			    <td>99.99$</td>
-			    <td>Pending</td>
-			  </tr>
-			</table>
-		</div>
-	</div>
-	<div class="container">
-		<h1>Đối tác kinh doanh</h1>
-		<div class="partner" title="partners">
-			<img src="cdn/youtube.png">
-			<img src="cdn/teky.png">
-			<img src="cdn/cornhub.jpg">
-		</div>
-	</div>
+	 <div style="min-width: 100%; min-height: 100%; background: #EC6B6B; display: block; padding: 100px;">
+	 	<h1 id="bigtitle" style="color: white;"></h1>
+	 </div>
 </body>
 </html>
