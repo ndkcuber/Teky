@@ -209,3 +209,31 @@ div .box .description{
 	text-align: center;
 
 }
+
+.card{
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin: 10px;
+	min-height: 100px;
+	min-width: 250px;
+	max-width: 250px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: .3s ease;
+}
+
+.card:hover{
+	background: #ddd;
+	cursor: pointer;
+}
+
+.card .title{
+	font-weight: bold;
+	font-size: 25px;
+	margin: 3px;
+}
+
+.card .description{
+	margin: 3px;
+	padding: 5px;
+}

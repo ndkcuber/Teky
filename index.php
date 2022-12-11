@@ -13,13 +13,25 @@
 	 <div class="container">
 	 	<div style="text-align: center; margin-top: 40px;">
 	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px;">
+	 		<div>
+			 	<div class="card">
+			 		<div class="title">MMB Tui cũng vậy</div>
+			 		<div class="description">Mẹ bạn đẹp trai lắm hihi</div>
+			 		<a class="defaultbtn">Xem thêm</a>
+		 		</div>
+		 		<div class="card">
+			 		<div class="title">Vì sao nên chọn Kha</div>
+			 		<div class="description">Bởi vì bạn đẹp trai</div>
+			 		<a class="defaultbtn">Xem thêm</a>
+		 		</div>
+		 		<div class="card">
+			 		<div class="title">Đăng kí nhận robix</div>
+			 		<div class="description">OMG free robix?</div>
+			 		<a class="defaultbtn">Xem thêm</a>
+		 		</div>
+	 		</div>
 	 	</div>
-	 	<div>
-	 		<div></div>
-	 		<div></div>
-	 		<a></a>
-	 	</div>
-	 </div>
+	</div>
 	 <style></style>
 </body>
 </html>
