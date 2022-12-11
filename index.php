@@ -10,8 +10,12 @@
 	<?php
  		include "navbar.php";
 	 ?>
-	 <div style="min-width: 100%; min-height: 100%; background: #EC6B6B; display: block; padding: 100px;">
-	 	<h1 id="bigtitle" style="color: white;"></h1>
+	 <div class="container">
+	 	<div style="text-align: center; margin-top: 40px;">
+	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px;">
+	 	</div>
+	 	<a></a>
 	 </div>
+	 <style></style>
 </body>
 </html>
