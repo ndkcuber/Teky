@@ -2,6 +2,7 @@
 	<ul>
 		<li><a href="index.php" class="item">HOME</a></li>
 		<li><a href="products.php" class="item">PRODUCTS</a></li>
+		<li><a href="posts.php" class="item">POSTS</a></li>
 		<li><a href="about.php" class="item">ABOUT</a></li>
 		<?php 
 		session_start();
