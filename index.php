@@ -12,7 +12,7 @@
 	 ?>
 	 <div class="container">
 	 	<div style="text-align: center; margin-top: 40px;">
-	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px;">
+	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
 	 		<div>
 			 	<div class="card">
 			 		<div class="title">MMB Tui cũng vậy</div>

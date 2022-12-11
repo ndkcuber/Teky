@@ -9,6 +9,7 @@ body{
 	margin: 0;
 	max-width: 100%;
 	scroll-behavior: smooth;
+	background: #B4F1A7;
 }
 
 #hs tr:nth-child(even){background-color: #f2f2f2;}
@@ -69,6 +70,7 @@ ul li .item:hover{
 
 
 .roundcard{
+	background: white;
 	margin: 30px;
 	min-width: 100%;
 	min-height: 400px;
@@ -117,6 +119,7 @@ select, select option{
 }
 
 div .box{
+	background: white;
 	margin: 10px;
 	display: inline-block;
 	padding: 10px 20px;
@@ -213,6 +216,7 @@ div .box .description{
 .card{
 	display: inline-block;
 	padding: 10px 20px;
+	background: white;
 	border-radius: 20px;
 	margin: 10px;
 	min-height: 100px;
