@@ -14,7 +14,11 @@
 	 	<div style="text-align: center; margin-top: 40px;">
 	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px;">
 	 	</div>
-	 	<a></a>
+	 	<div>
+	 		<div></div>
+	 		<div></div>
+	 		<a></a>
+	 	</div>
 	 </div>
 	 <style></style>
 </body>
