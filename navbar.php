@@ -6,6 +6,7 @@
 		<li><a href="about.php" class="item">ABOUT</a></li>
 		<?php 
 		session_start();
+		include "database.php";
 			if (!isset($_SESSION['username'])) {
 				echo "		<div style=\"float: right;\">
 								<li><a href=\"login.php\" class=\"item\" style=\"margin-right: 10px;\">Login</a></li>
@@ -14,6 +15,10 @@
 			} else{
 				echo "		<div style=\"float: right;\">
 								<li><a href=\"profile.php\" class=\"item\" style=\"margin-right: 10px;\">".$_SESSION['username']."</a></li>";
+				if ($row['role'] == "Admin") {
+						echo "		<div style=\"float: right;\">
+					<li><a href=\"admin.php\" class=\"item\" style=\"margin-right: 10px;\">Quản lí</a></li>";
+				}
 			}
 		?>
 	</ul>

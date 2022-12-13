@@ -18,7 +18,7 @@
       $result = mysqli_query($conn,$sql);
       $row = $result->fetch_assoc();
       if ($row['banned'] == 1) {
-         header("Location: logout.php?confirm=yes");
+         header("Location: logout.php");
          die();
       }
    }
