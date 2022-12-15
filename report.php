@@ -16,13 +16,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Tạo đơn khiếu nại</title>
+	<title>Tạo đơn hỗ trợ</title>
 </head>
 <body>
 	<div class="container" style="max-width: 720px;">
 		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
-			<h1>Tạo đơn khiếu nại</h1>
+			<h1>Tạo đơn hỗ trợ</h1>
 			<form action="login.php" method="post" style="margin: 20px; text-align: left;">
 				<label for="login-username"></label>
 				<h2>Username:</h2>

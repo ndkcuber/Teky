@@ -15,18 +15,18 @@
 	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
 	 		<div>
 			 	<div class="card">
-			 		<div class="title">MMB Tui cũng vậy</div>
-			 		<div class="description">Mẹ bạn đẹp trai lắm hihi</div>
+			 		<div class="title">Tựa đề 1</div>
+			 		<div class="description">Mô tả 1</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 		 		<div class="card">
-			 		<div class="title">Vì sao nên chọn Kha</div>
-			 		<div class="description">Bởi vì bạn đẹp trai</div>
+			 		<div class="title">Tựa đề 2</div>
+			 		<div class="description">Mô tả 2</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 		 		<div class="card">
-			 		<div class="title">Đăng kí nhận robix</div>
-			 		<div class="description">OMG free robix?</div>
+			 		<div class="title">Tựa đề 3</div>
+			 		<div class="description">Mô tả 3</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 	 		</div>
