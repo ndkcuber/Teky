@@ -12,8 +12,6 @@
 	<div id="left">Left</div>
 	<div id="right">Right</div>
 	<div id="content">Content</div>
-	<div id="footer">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png" style="width: 140px; float: left;"><p>HTML là hypertext make up language, rất là đẹp trai omg omg omg real look at this cool looking language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language language </p>
-	</div>
+	<div id="footer">Footer<div>
 </body>
 </html>
