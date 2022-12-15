@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	text-align: center;
+}
+
+#header, #menu, #left, #content, #right, #footer{
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 2px;
+	background: lightgrey;
+	display: flex;
+}
+
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+#content{
+	text-align: center;
+}
+
+#footer{
+	;
+}
