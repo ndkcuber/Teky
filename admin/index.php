@@ -7,11 +7,14 @@
 	<title>Admin</title>
 </head>
 <body>
-	<div id="header">Header</div>
-	<div id="menu">Menu</div>
-	<div id="left">Left</div>
-	<div id="right">Right</div>
-	<div id="content">Content</div>
-	<div id="footer">Footer<div>
+	<div class="container">	
+		<div id="header">Header</div>
+		<div id="menu">Menu</div>
+		<div id="left">Left</div>
+		<div id="right">Right</div>
+		<div id="content">Content</div>
+		<div id="footer">Footer<div>
+	</div>
+
 </body>
 </html>

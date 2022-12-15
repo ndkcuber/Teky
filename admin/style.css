@@ -1,29 +1,55 @@
 body{
 	margin: 0;
 	text-align: center;
+	background: palegoldenrod;
+}
+
+.container{
+	display: inline-block;
+	padding: 300px;
+	font-size: 10px;
+	transform: scale(3);
 }
 
 #header, #menu, #left, #content, #right, #footer{
-	padding: 100px;
 	text-align: center;
-	border-radius: 10px;
-	margin: 2px;
 	background: lightgrey;
+	color: white;
 	display: flex;
 }
 
+#header{
+	background: deeppink;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#menu{
+	background: ;
+}
+
 #left{
+	min-width: 50px;
+	min-height: 140px;
 	float: left;
+	background: lightgreen;
 }
 
 #right{
+	min-width: 50px;
 	float: right;
+	background: orange;
+	min-height: 140px;
 }
 
 #content{
+	min-height: 140px;
+	min-width: 140px;
 	text-align: center;
+	background: lawngreen;
 }
 
 #footer{
 	clear: both;
+	background: purple;
+	border-radius: 0px 0px 5px 5px;
 }
