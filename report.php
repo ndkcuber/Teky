@@ -30,7 +30,7 @@
 
 				<label for="login-username"></label>
 				<h2>Miêu tả vấn đề của bạn:</h2>
-				<input type="text" name="login-username" class="user-input" placeholder="Nhập vấn đề" readonly required>
+				<input type="text" name="login-username" class="user-input" placeholder="Nhập vấn đề" required>
 
 				<label for="login-password"></label>
 				<h2>Password:</h2>
