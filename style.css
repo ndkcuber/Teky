@@ -247,6 +247,12 @@ div .box .description{
 
 }
 
-.dongnama:hover{
-
+.hide{
+	display: none;
 }
+
+.dongnama:hover	+ .hide{
+	display: inline-block;
+	width: 40px;
+}
+
