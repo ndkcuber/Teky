@@ -79,7 +79,7 @@ ul li .item{
 ul li .item:hover{
 	color: yellow;
 	transform: scale(1.04);
-	background-color: #0CC875;
+	background-color: seagreen;
 }
 
 

@@ -26,8 +26,8 @@
 		<div class="roundcard">
 			<h1>Quản lí</h1>
 			<div style="margin: 30px; text-align: left;">
-				<a href="" target="_blank">Thêm sản phẩm</a>
-				<a href="" target="_blank">Quản lí đơn hàng</a>
+				<a href="" target="_blank" class="defaultbtn">Thêm sản phẩm</a>
+				<a href="" target="_blank" class="defaultbtn">Quản lí đơn hàng</a>
 			</div>
 	
 		</div>
