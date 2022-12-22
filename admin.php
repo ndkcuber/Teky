@@ -26,9 +26,9 @@
 		<div class="roundcard">
 			<h1>Quản lí</h1>
 			<div style="margin: 30px; text-align: left;">
-				<a href="addproduct.php" target="_blank" class="defaultbtn" style="margin: 10px;">Thêm sản phẩm</a>
-				<a href="" target="_blank" class="defaultbtn" style="margin: 10px;">Quản lí đơn hàng</a>
-				<a href="" target="_blank" class="defaultbtn" style="margin: 10px;">Yêu cầu hỗ trợ <?php echo "<span style=\"color:red;\">10</span>"; ?></a>
+				<a href="addproduct.php" class="defaultbtn" style="margin: 10px;">Thêm sản phẩm</a>
+				<a href="" class="defaultbtn" style="margin: 10px;">Quản lí đơn hàng</a>
+				<a href="" class="defaultbtn" style="margin: 10px;">Yêu cầu hỗ trợ <?php echo "<span style=\"color:red;\">10</span>"; ?></a>
 			</div>
 	
 		</div>
