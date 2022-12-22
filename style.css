@@ -23,6 +23,7 @@ body{
 	max-width: 100%;
 	scroll-behavior: smooth;
 	background: #323232;
+	color: grey;
 }
 
 #hs tr:nth-child(even){background-color: #f2f2f2;}
