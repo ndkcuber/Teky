@@ -1,0 +1,10 @@
+product_name
+product_price
+product_stock
+product_des_short
+product_des_long
+product_author
+product_id
+
+
+<div class="box"><div class="title"><h2>Sản phẩm 1</h2></div><div class="image"><img src="cdn/product.png"></div><div style="color: grey" class="description"><h2>19.99 $</h2><p>Đây là một sản phẩm test</p><p>Stock: 10</p></div><a href="javascript:void(0)" target="_blank" class="view-more-btn">Xem thêm</a></div>

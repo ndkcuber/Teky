@@ -33,10 +33,7 @@
 				<img src="cdn/youtube.png">
 				<img src="cdn/teky.png">
 				<img src="cdn/cornhub.jpg">	
-			</div>
-			
-			
-			
+			</div>		
 		</div>
 		<a href="report.php" target="_blank" class="defaultbtn">Liên hệ hỗ trợ</a>
 	</div>
