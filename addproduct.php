@@ -23,7 +23,7 @@
 					$product_stock = $_POST['product_stock'];
 					$product_author = $_SESSION['username'];
 
-					$sql = "INSERT INTO `products`(`product_name`, `product_price`, `product_stock`, `product_des_short`, `product_des_long`, `product_author`, `product_id`) VALUES ('$product_name','$product_price','$product_stock','[$product_des_short','$product_des_long','$product_author','$product_id')";
+					$sql = "INSERT INTO `products`(`product_name`, `product_price`, `product_stock`, `product_des_short`, `product_des_long`, `product_author`, `product_id`) VALUES ('$product_name','$product_price','$product_stock','$product_des_short','$product_des_long','$product_author','$product_id')";
 					$result = mysqli_query($conn, $sql);
                     if ($sql) {
                     	$ketqua = "Thêm sản phẩm thành công!";
