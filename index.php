@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Trang chủ</title>
+	<div id="particles-js"></div>
+	<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body onload="typeWriter()">
 	<?php

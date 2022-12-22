@@ -4,6 +4,19 @@ html{
 	scroll-behavior: smooth;
 }
 
+#particles-js{
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	position: fixed;
+	filter: opacity(60%);
+	z-index: -9999;
+	background-image: url('background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
 body{
 	font-family: 'Quicksand';
 	margin: 0;
