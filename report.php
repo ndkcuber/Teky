@@ -28,13 +28,9 @@
 				<h2>Username:</h2>
 				<input type="text" name="login-username" class="user-input" placeholder="Username" value="<?php echo $_SESSION['username']; ?>" readonly required>
 
-				<label for="login-username"></label>
+				<label for="problem"></label>
 				<h2>Miêu tả vấn đề của bạn:</h2>
-				<input type="text" name="login-username" class="user-input" placeholder="Nhập vấn đề" required>
-
-				<label for="login-password"></label>
-				<h2>Password:</h2>
-				<input type="password" name="login-password" class="user-input" placeholder="Password" required>
+				<input type="text" name="problem" class="user-input" placeholder="Nhập vấn đề" required>
 
 				<br>
 				<input type="submit" name="submit" value="Tạo" class="success-btn">
