@@ -6,7 +6,8 @@
 		header("Location: login.php");
 		die();
 	} else{
-
+		$user = $_POST['login-username'];
+		$problem = $_POST['problem'];
 	}
 ?>
 
