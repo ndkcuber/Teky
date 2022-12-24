@@ -24,6 +24,27 @@
 <body>
 	<div class="container" style="max-width: 720px;">
 		<h1>Tất cả yêu cầu hỗ trợ</h1>
+					<?php 
+				include "database.php";
+				function show_reports(){
+					include("database.php");
+					  $sql2 = "SELECT * FROM report";
+				      $result2 = mysqli_query($conn,$sql2);
+				      if ($result2->num_rows > 0) {
+				      	while ($row2 = mysqli_fetch_array($result2)) {
+				      		//foreach ($row2 as $value) { // I you want you can right this line like this: foreach($row as $value) {
+						        echo "		<div style=\"width: 100%; display: inline-block; background: whitesmoke; min-width: 100%; min-height: 100px; border-radius: 30px; margin: 10px;\">
+			<div style=\"margin: 50px;\">
+				<h1>".$row2['user']."</h1>
+				<h3>".$row2['problem']."</h3>
+			</div>
+		</div>"; 
+						    //}
+				      	}
+				    }
+				}
+				show_reports()
+			?>
 	</div>
 </body>
 </html>
