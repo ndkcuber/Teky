@@ -6,8 +6,17 @@
 		header("Location: login.php");
 		die();
 	} else{
-		$user = $_POST['login-username'];
-		$problem = $_POST['problem'];
+		if (isset($_POST['problem'])) {
+			$user = $_POST['login-username'];
+			$problem = $_POST['problem'];
+			$sql = "INSERT INTO `report`(`user`, `problem`) VALUES ('".$user."','".$problem."')";
+				$result = mysqli_query($conn, $sql);
+	            if ($sql) {
+	                $ketqua = "Đã gửi cho quản lí, chúng tôi sẽ liên hệ bạn sau";
+	            } else{
+	            	$ketqua = "Web đang gặp lỗi, vui lòng quay lại sau";
+	        }
+		}
 	}
 ?>
 
@@ -24,7 +33,7 @@
 		<h1 style="color: salmon;"><?php echo $ketqua; ?></h1>
 		<div class="roundcard">
 			<h1>Tạo đơn hỗ trợ</h1>
-			<form action="login.php" method="post" style="margin: 20px; text-align: left;">
+			<form action="report.php" method="post" style="margin: 20px; text-align: left;">
 				<label for="login-username"></label>
 				<h2>Username:</h2>
 				<input type="text" name="login-username" class="user-input" placeholder="Username" value="<?php echo $_SESSION['username']; ?>" readonly required>
