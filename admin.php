@@ -28,7 +28,16 @@
 			<div style="margin: 30px; text-align: left;">
 				<a href="addproduct.php" class="defaultbtn" style="margin: 10px;">Thêm sản phẩm</a>
 				<a href="" class="defaultbtn" style="margin: 10px;">Quản lí đơn hàng</a>
-				<a href="viewreport.php" class="defaultbtn" style="margin: 10px;">Yêu cầu hỗ trợ <?php echo "<span style=\"color:red;\">10</span>"; ?></a>
+				<a href="viewreport.php" class="defaultbtn" style="margin: 10px;">Yêu cầu hỗ trợ 
+					<span style="color: orangered; display: inline-block;min-height: 25px; min-width: 25px; max-width: 25px; max-height: 25px; border-radius: 1500px; background: lightgrey;">					<?php
+						$sql = "SELECT * FROM report";
+						if ($result=mysqli_query($conn,$sql)) {
+							$rowcount=mysqli_num_rows($result);
+							echo $rowcount;
+						}
+					?>	</span>
+
+					</a>
 			</div>
 	
 		</div>

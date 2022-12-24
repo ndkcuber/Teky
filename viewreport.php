@@ -22,7 +22,7 @@
 	<title>Tạo đơn hỗ trợ</title>
 </head>
 <body>
-	<div class="container" style="max-width: 720px;">
+	<div class="container" style="max-width: 720px; margin-bottom: 30px;">
 		<h1>Tất cả yêu cầu hỗ trợ</h1>
 					<?php 
 				include "database.php";
@@ -35,7 +35,7 @@
 				      		//foreach ($row2 as $value) { // I you want you can right this line like this: foreach($row as $value) {
 						        echo "		<div style=\"width: 100%; display: inline-block; background: whitesmoke; min-width: 100%; min-height: 100px; border-radius: 30px; margin: 10px;\">
 			<div style=\"margin: 50px;\">
-				<h1>".$row2['user']."</h1>
+				<h1 style=\"color:red;\">".$row2['user']."</h1>
 				<h3>".$row2['problem']."</h3>
 			</div>
 		</div>"; 
