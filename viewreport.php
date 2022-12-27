@@ -19,7 +19,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Tạo đơn hỗ trợ</title>
+	<title>Các đơn hỗ trợ</title>
 </head>
 <body>
 	<div class="container" style="max-width: 720px; margin-bottom: 30px;">

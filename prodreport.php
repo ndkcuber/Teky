@@ -19,11 +19,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Tạo đơn hỗ trợ</title>
+	<title>Lịch sử đơn hàng</title>
 </head>
 <body>
 	<div class="container" style="max-width: 720px; margin-bottom: 30px;">
-		<h1>Tất cả yêu cầu hỗ trợ</h1>
+		<h1>Lịch sử đơn hàng</h1>
 					<?php 
 				include "database.php";
 				function show_reports(){
@@ -35,7 +35,7 @@
 				      		//foreach ($row2 as $value) { // I you want you can right this line like this: foreach($row as $value) {
 						        echo "		<div style=\"width: 100%; display: inline-block; background: whitesmoke; min-width: 100%; min-height: 100px; border-radius: 30px; margin: 10px;\">
 			<div style=\"margin: 50px;\">
-				<h1 style=\"color:red;\">".$row2['user']." đã mua 1 ".$row2['productname']." vào ".$row2['date']."</h1>
+				<h3 style=\"color:red;\">".$row2['user']."<span style=\"color:grey;\"> đã mua 1 </span>".$row2['productname']."<span style=\"color:grey;\"> vào </span>".$row2['date']."</h3>
 			</div>
 		</div>"; 
 						    //}
