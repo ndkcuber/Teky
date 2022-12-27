@@ -24,6 +24,15 @@
 			$new_stock = $product_stock-1;
 			$sql = "UPDATE `products` SET `product_stock`='".$new_stock."' WHERE `product_id`='".$_GET['id']."'";
 			$result = mysqli_query($conn,$sql);
+
+
+			$user = $_SESSION['username'];
+			$product_name = $row['product_name'];
+			date_default_timezone_set('Asia/Ho_Chi_Minh');
+			$date = date('d-m-Y');
+
+			$sql = "INSERT INTO `prodreport`(`user`, `productname`, `date`) VALUES ('".$user."','".$product_name."','".$date."')";
+			$result = mysqli_query($conn,$sql);
 			}
 	 ?>
 	<div class="container" style="max-width: 720px;">
@@ -31,6 +40,7 @@
 			<div style="margin: 30px; text-align: center;">
 				<?php 
 					echo "<script>alert(\"Mua hàng thành công!\")</script>";
+					echo "<script>window.close();</script>";
 				?>
 				<meta http-equiv="refresh" content="0; url=index.php" />
 			</div>
