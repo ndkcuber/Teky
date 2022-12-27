@@ -35,7 +35,7 @@
 				      		//foreach ($row2 as $value) { // I you want you can right this line like this: foreach($row as $value) {
 						        echo "		<div style=\"width: 100%; display: inline-block; background: whitesmoke; min-width: 100%; min-height: 100px; border-radius: 30px; margin: 10px;\">
 			<div style=\"margin: 50px;\">
-				<h1 style=\"color:red;\">".$row2['user']." đã mua 1 ".$row2['productname']." vào ".."</h1>
+				<h1 style=\"color:red;\">".$row2['user']." đã mua 1 ".$row2['productname']." vào ".$row2['date']."</h1>
 			</div>
 		</div>"; 
 						    //}
