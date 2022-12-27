@@ -17,6 +17,10 @@ html{
 
 }
 
+.container::-webkit-scrollbar {
+    display: none;
+}
+
 body{
 	font-family: 'Quicksand';
 	margin: 0;
@@ -24,6 +28,7 @@ body{
 	scroll-behavior: smooth;
 	background: #323232;
 	color: grey;
+	overflow-y: scroll;
 }
 
 #hs tr:nth-child(even){background-color: #f2f2f2;}
@@ -46,11 +51,13 @@ body{
 
 .container{
 	width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .navbar{
