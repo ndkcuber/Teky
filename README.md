@@ -1,8 +1,6 @@
 # Teky
-Project cuối khóa teky be like
+## Cách setup
 
-<h1>T chỉ đang học lập trình web thôi vl</h1>
-
-<h2>PHP 7.4.29</h2>
-<h2>SQL Database</h2>
-<h2>logindb và cgì cũng ko bt</h2>
+## Tải toàn bộ file về, sử dụng XAMPP hoặc bất cứ host gì
+## Tạo database, import file Teky.sql
+## Config lại file database.php :)
