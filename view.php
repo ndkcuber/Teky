@@ -28,12 +28,12 @@
 				$product_stock = $row['product_stock'];
 				$product_author = $row['product_author'];
 			} else{
-				$product_id = "Me may beo";
-				$product_name = "Me may beo";
-				$product_price = "Me may beo";
-				$product_des_long = "Me may beo";
-				$product_stock = "Me may beo";
-				$product_author = "Me may beo";
+				$product_id = "Không có dữ liệu :)";
+				$product_name = "";
+				$product_price = "";
+				$product_des_long = "";
+				$product_stock = "";
+				$product_author = "";
 			}
 		}
 	 ?>
