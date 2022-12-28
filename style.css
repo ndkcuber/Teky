@@ -54,8 +54,6 @@ body{
   margin-right: auto;
   margin-left: auto;
   max-width: 1400px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   text-align: left;
 }
 
