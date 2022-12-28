@@ -30,7 +30,7 @@
 				      			$stock = $row2['product_stock'];
 				      		}
 				      		//foreach ($row2 as $value) { // I you want you can right this line like this: foreach($row as $value) {
-						        echo "<div class=\"box\"><div class=\"title\"><h2>".$row2['product_name']."</h2></div><div class=\"image\"><img src=\"cdn/product.png\"></div><div style=\"color: grey\" class=\"description\"><h2>".$row2['product_price']." $</h2><p>".$row2['product_des_short']."</p><p>Stock: ".$stock."</p></div><a href=\"view.php?id=".$row2['product_id']."\" target=\"_blank\" class=\"view-more-btn\">Xem thêm</a></div>"; 
+						        echo "<div class=\"box\"><div class=\"title\"><h2>".$row2['product_name']."</h2></div><div class=\"image\"><img src=\"cdn/product.png\"></div><div style=\"color: grey\" class=\"description\"><h2>".$row2['product_price']." $</h2><p>".$row2['product_des_short']."</p><p>ID: ".$row2['product_id']." - Kho: ".$stock."</p></div><a href=\"view.php?id=".$row2['product_id']."\" target=\"_blank\" class=\"view-more-btn\">Xem thêm</a></div>"; 
 						    //}
 				      	}
 				    }
