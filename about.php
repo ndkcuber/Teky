@@ -13,16 +13,16 @@
 	<?php
  		include "navbar.php";
 	 ?>
-	<div class="container" style="margin-bottom: 20px;">
+	<div class="container" style="margin-bottom: 20px; text-align: left;">
 		<h1 style="color: salmon;"></h1>
 		<div class="roundcard">
 			<h1>Về chúng tôi:</h1>
-			<div style="margin: 30px;">
+			<div style="margin: 40px;">
 				<div style="float: left; clear:both; text-align: left; max-width:60%;">
 					<h1>GIỚI THIỆU VỀ CHÚNG TÔI</h1>
 					<p>CHỖ BÁN ĐỒ TẠP NHAM :)</p>
 				</div>
-				<div style="float: right; margin: 40px;">
+				<div style="float: right; margin: 40px; width: 100%;">
 					<img src="https://teky.edu.vn/static/web/upload/about-intro.png" >
 				</div>
 			</div>

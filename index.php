@@ -18,18 +18,18 @@
 	 		<img src="cdn/gift.png" style="width:900px; max-width: 90%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
 	 		<div>
 			 	<div class="card">
-			 		<div class="title">Tựa đề 1</div>
-			 		<div class="description">Mô tả 1</div>
+			 		<div class="title">Uy tín</div>
+			 		<div class="description">Tự tin với sự uy tín lâu đời</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 		 		<div class="card">
-			 		<div class="title">Tựa đề 2</div>
-			 		<div class="description">Mô tả 2</div>
+			 		<div class="title">An Toàn</div>
+			 		<div class="description">Top những mặt hàng ok nhất!</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 		 		<div class="card">
-			 		<div class="title">Tựa đề 3</div>
-			 		<div class="description">Mô tả 3</div>
+			 		<div class="title">Hỗ trợ</div>
+			 		<div class="description">Chúng tôi luôn lắng nghe bạn!</div>
 			 		<a class="defaultbtn">Xem thêm</a>
 		 		</div>
 	 		</div>
