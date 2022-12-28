@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Đăng nhập</title>
 	<div id="particles-js"></div>
 	<script type="text/javascript" src="particles.js"></script>
 	<script type="text/javascript" src="app.js"></script>
@@ -28,15 +27,16 @@
 				$product_stock = $row['product_stock'];
 				$product_author = $row['product_author'];
 			} else{
-				$product_id = "Không có dữ liệu :)";
-				$product_name = "";
-				$product_price = "";
+				$product_id = "";
+				$product_name = "Không có dữ liệu :)";
+				$product_price = "0";
 				$product_des_long = "";
 				$product_stock = "";
 				$product_author = "";
 			}
 		}
 	 ?>
+	 <title><?php echo $product_name ?></title>
 	<div class="container" style="max-width: 720px;">
 		<div class="roundcard">
 			<div style="margin: 30px; text-align: left;">

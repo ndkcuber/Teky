@@ -7,8 +7,9 @@
 			$sql = "SELECT * FROM products WHERE `product_id`='".$_GET['id']."'";
 			$result = mysqli_query($conn,$sql);
 			$row = $result->fetch_assoc();
-			$product_stock = $row['product_stock'];
-			if ($product_stock == "0") {
+			if ($row >= 1) {
+				$product_stock = $row['product_stock'];
+				if ($product_stock == "0") {
 				echo "<script>alert(\"Hết hàng!\")</script>";
 				echo "<script>window.close();</script>";
 			} else{
@@ -26,7 +27,9 @@
 				echo "<script>alert(\"Mua hàng thành công!\")</script>";
 				echo "<script>window.close();</script>";
 			}
-
-
-			}
+		} else{
+			echo "<script>alert(\"Mặt hàng không tồn tại\")</script>";
+			echo "<script>window.close();</script>";
+		}
+	}
 	 ?>
