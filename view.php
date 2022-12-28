@@ -20,15 +20,22 @@
 			$sql = "SELECT * FROM products WHERE `product_id`='".$_GET['id']."'";
 			$result = mysqli_query($conn,$sql);
 			$row = $result->fetch_assoc();
-
-			$product_id = $_GET['id'];
-			$product_name = $row['product_name'];
-			$product_price = $row['product_price'];
-			$product_des_long = $row['product_des_long'];
-			$product_stock = $row['product_stock'];
-			$product_author = $row['product_author'];
-			
+			if ($row >= 1) {
+				$product_id = $_GET['id'];
+				$product_name = $row['product_name'];
+				$product_price = $row['product_price'];
+				$product_des_long = $row['product_des_long'];
+				$product_stock = $row['product_stock'];
+				$product_author = $row['product_author'];
+			} else{
+				$product_id = "Me may beo";
+				$product_name = "Me may beo";
+				$product_price = "Me may beo";
+				$product_des_long = "Me may beo";
+				$product_stock = "Me may beo";
+				$product_author = "Me may beo";
 			}
+		}
 	 ?>
 	<div class="container" style="max-width: 720px;">
 		<div class="roundcard">
